@@ -5,6 +5,9 @@ Supporting standard library only.
 
 This repository is created from a request to isolate fixed python version runtime for educational use.
 
+[Try it on github pages.](https://akariinc.github.io/pyodide-isolation/)
+
+
 
 ## Build and run pyodide environment locally
 
@@ -29,3 +32,5 @@ tar -xjf pyodide-0.29.0.tar.bz2 -C _output/pyodide/pyodide
 # Run locally
 cd _output && python -m http.server 8000
 ```
+
+
