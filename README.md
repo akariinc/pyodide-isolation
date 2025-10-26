@@ -21,7 +21,7 @@ jupyter lite build
 # Download pyodide assets and extract into jupyter build
 mkdir -p _output/pyodide/pyodide
 curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-core-0.29.0.tar.bz2
-tar -xjf pyodide-core-0.29.0.tar.bz2 _output/pyodide
+tar -xjf pyodide-core-0.29.0.tar.bz2 -C _output/pyodide
 curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-0.29.0.tar.bz2
 tar -xjf pyodide-0.29.0.tar.bz2 -C _output/pyodide/pyodide
 
