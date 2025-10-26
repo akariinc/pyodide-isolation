@@ -40,11 +40,13 @@ jobs:
           tar -xjf pyodide-core-0.29.0.tar.bz2 _output/pyodide
           curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-0.29.0.tar.bz2
           tar -xjf pyodide-0.29.0.tar.bz2 -C _output/pyodide/pyodide
+          mv _output docs
+
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _output
+          path: docs
 
   deploy:
     needs: build

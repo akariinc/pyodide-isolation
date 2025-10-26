@@ -214,4 +214,4 @@ pyodide/
 # JupyterLite
 # Ignore all files except _output/.gitkeep
 _output/*
-!_output/.gitkeep
+docs/*
