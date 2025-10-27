@@ -35,11 +35,9 @@ jobs:
 
       - name: Download pyodide assets
         run: |
-          mkdir -p _output/pyodide/pyodide
-          curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-core-0.29.0.tar.bz2
-          tar -xjf pyodide-core-0.29.0.tar.bz2 -C _output/pyodide
+          mkdir -p _output
           curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-0.29.0.tar.bz2
-          tar -xjf pyodide-0.29.0.tar.bz2 -C _output/pyodide/pyodide
+          tar -xjf pyodide-0.29.0.tar.bz2 -C _output
           mv _output docs
 
 

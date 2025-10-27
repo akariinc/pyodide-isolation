@@ -1,12 +1,14 @@
 {
   "jupyter-lite-schema-version": 0,
-  "overrides": {
-    "@jupyterlite/pyodide-kernel-extension:kernel": {
-      "indexUrl": "./pyodide/",
-      "pyodideUrl": "./pyodide/"
-    },
-    "@jupyterlite/piplite:index": {
-      "pipliteUrls": ["./pyodide/pyodide-lock.json"]
+  "jupyter-config-data": {
+    "disabledExtensions": ["@jupyterlite/piplite"],
+    "litePluginSettings": {
+      "@jupyterlite/pyodide-kernel-extension:kernel": {
+        "pyodideUrl": "./pyodide/pyodide.js"
+      },
+      "@jupyterlite/piplite:index": {
+        "pipliteUrls": []
+      }
     }
   }
 }
