@@ -35,6 +35,8 @@ tar -xjf pyodide-$PYODIDE_VERSION.tar.bz2 -C _output
 
 # Run locally
 python -m http.server -d _output 8000
+
+# Access http://localhost:8000/pyodide/console.html
 ```
 
 
