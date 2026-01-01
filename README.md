@@ -27,12 +27,14 @@ jupyter lite build
 
 # Download pyodide assets and extract into jupyter build
 mkdir -p _output
-curl -LO https://github.com/pyodide/pyodide/releases/download/0.29.0/pyodide-0.29.0.tar.bz2
-tar -xjf pyodide-0.29.0.tar.bz2 -C _output
+# Use 0.29.0 for python3.12, 0.28.x has python3.13 runtime
+PYODIDE_VERSION=0.28.3
+curl -LO https://github.com/pyodide/pyodide/releases/download/$PYODIDE_VERSION/pyodide-$PYODIDE_VERSION.tar.bz2
+tar -xjf pyodide-$PYODIDE_VERSION.tar.bz2 -C _output
 
 
 # Run locally
-cd _output && python -m http.server 8000
+python -m http.server -d _output 8000
 ```
 
 
