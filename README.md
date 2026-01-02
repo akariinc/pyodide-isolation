@@ -16,7 +16,7 @@ This repository is created from a request to isolate fixed python version runtim
 ## Build and run pyodide environment locally
 
 Download the version you want.
-https://akariinc.github.io/pyodide-isolation/pyodide/console.html
+https://github.com/pyodide/pyodide/releases
 
 ```bash
 # Install dependencies
