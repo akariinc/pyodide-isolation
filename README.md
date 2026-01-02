@@ -5,7 +5,7 @@ Supporting standard library only.
 
 This repository is created from a request to isolate fixed python version runtime for educational use.
 
-[Try it on github pages.](https://akariinc.github.io/pyodide-isolation/)
+[Try it on github pages.](https://akariinc.github.io/pyodide-isolation/pyodide/console.html)
 
 
 ## Note
